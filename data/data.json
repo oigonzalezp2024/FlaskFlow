@@ -4,17 +4,13 @@
         "name": "Oscar Ivan",
         "lastname": "Gonzalez",
         "email": "oigonzalezp2024@gmail.com",
-        "phone": "3134563202",
-        "phoner": "3134563202",
-        "phonere": "3134563202"
+        "phone": "3134563202"
     },
     {
         "id": "1",
-        "name": "Oscar Ivan",
-        "lastname": "Gonzalez",
-        "email": "oigonzalezp2024@gmail.com",
-        "phone": "3134563202",
-        "phoner": "3134563202",
-        "phonere": "3134563202"
+        "name": "Martha Elena",
+        "lastname": "Peña",
+        "email": "marthapp@gmail.com",
+        "phone": "3134563266"
     }
 ]
