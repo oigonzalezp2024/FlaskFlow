@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if name %}
+  <title>{{ name }}</title>
+  {% else %}
+  <title>Proyecto en desarrollo</title>
+  {% endif %}
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+
+<body>
+  {% if name %}
+  <h1>{{ name }}</h1>
+  {% else %}
+  <h1>Proyecto en desarrollo</h1>
+  {% endif %}
+  <table id="customers">
+    <thead>
+      <tr>
+        {%- for column in keys %}
+        <th>{{ column }}</th>
+        {%- endfor %}
+      </tr>
+    </thead>
+    <tbody>
+        {%- for values in data %}
+        <tr>
+          {%- for value in values %}
+          <td>{{ value }}</td>
+          {%- endfor %}
+        </tr>
+        {%- endfor %}
+    </tbody>
+  </table>
+
+</body>
+
+</html>
