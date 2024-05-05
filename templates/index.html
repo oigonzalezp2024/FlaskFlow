@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% if name %}
-  <title>{{ name }}</title>
-  {% else %}
-  <title>Proyecto en desarrollo</title>
-  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./static/style.css">
+  <script src="./static/script.js"></script>
 </head>
 
 <body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a id="btnMenu" class="icon">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   {% if name %}
   <h1>{{ name }}</h1>
   {% else %}
@@ -27,16 +33,15 @@
       </tr>
     </thead>
     <tbody>
-        {%- for values in data %}
-        <tr>
-          {%- for value in values %}
-          <td>{{ value }}</td>
-          {%- endfor %}
-        </tr>
+      {%- for values in data %}
+      <tr>
+        {%- for value in values %}
+        <td>{{ value }}</td>
         {%- endfor %}
+      </tr>
+      {%- endfor %}
     </tbody>
   </table>
-
 </body>
 
 </html>
